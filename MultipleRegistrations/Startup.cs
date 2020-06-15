@@ -32,7 +32,7 @@ namespace MultipleRegistrations
             services.AddTransient<IMarketingPromo, HomeControllerIndexActionPromo>();
             services.AddTransient<IMarketingPromo, AboutControllerIndexActionPromo>();
             services.AddTransient<DefaultMarketingPromotion>();
-            services.AddTransient<IMarketingPromoProvider, RoutBasedPromoFactory>();
+            services.AddTransient<IMarketingPromoProvider, RouteBasedPromoFactory>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

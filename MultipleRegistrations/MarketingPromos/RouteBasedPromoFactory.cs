@@ -4,13 +4,13 @@ using System.Collections.Generic;
 
 namespace MultipleRegistrations.MarketingPromos
 {
-    public class RoutBasedPromoFactory : IMarketingPromoProvider
+    public class RouteBasedPromoFactory : IMarketingPromoProvider
     {
         private readonly IEnumerable<IMarketingPromo> _promotions;
         private readonly DefaultMarketingPromotion _defaultPromo;
         private readonly IActionContextAccessor _contextAccessor;
 
-        public RoutBasedPromoFactory(IActionContextAccessor contextAccessor, IEnumerable<IMarketingPromo> promotions, DefaultMarketingPromotion defaultPromo)
+        public RouteBasedPromoFactory(IActionContextAccessor contextAccessor, IEnumerable<IMarketingPromo> promotions, DefaultMarketingPromotion defaultPromo)
         {
             _contextAccessor = contextAccessor;
             _promotions = promotions;
